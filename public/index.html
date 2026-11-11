@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Gordian Stack</title>
+  <meta name="description" content="The Gordian Stack is Blockchain Commons' set of open, interoperable technologies for holding keys, sharing data, and proving identity. Try parts of it in live demos and web tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Gordian Stack">
+  <meta property="og:description" content="Open tools from Blockchain Commons that you can try today.">
+  <meta property="og:url" content="https://gordianstack.com/">
+  <meta property="og:image" content="https://gordianstack.com/assets/images/bc-card.jpg">
+  <link rel="icon" href="/assets/images/bc-logo-white-avatar.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="site-title" href="/"><img src="/assets/images/bc-logo-white-avatar.png" alt="">Gordian Stack</a>
+    <nav aria-label="Blockchain Commons sites">
+      <ul>
+        <li><a href="https://www.blockchaincommons.com">Main Site</a></li>
+        <li><a href="https://developer.blockchaincommons.com">Developers</a></li>
+        <li><a href="https://advocacy.blockchaincommons.com">Advocacy</a></li>
+        <li><a href="https://github.com/openintegrityproject">Open Integrity</a></li>
+        <li><a href="https://www.smartcustody.com">Smart Custody</a></li>
+        <li><a href="https://www.blockchaincommons.com/sponsors/">Sponsors</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>The Gordian Stack</h1>
+    <p class="tagline">Open Tools You Can Try Today</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+
+    <p class="lead">The Gordian Stack is Blockchain Commons' set of open, interoperable technologies for holding keys, sharing data, and proving identity in ways that keep people in control of their own digital lives. This page links to live demos and web tools where you can try parts of it for yourself.</p>
+
+    <h2>Why the Gordian Stack?</h2>
+
+    <p>Too much of the internet asks you to trust a platform that sees everything: to log in through one of a few large companies, to reveal more than a task requires, and to leave your data behind when you go. The Gordian Stack takes a different approach. It is not an app. It is a layer underneath apps that decides how keys are held, how data is shared, and how devices talk to each other, so that privacy becomes a property of the data itself.</p>
+
+    <p>Our designs focus on four specific principles:</p>
+
+    <div class="notice">
+      <ul>
+        <li><strong>Independence.</strong> Improve user freedom from involuntary oversight and external control.</li>
+        <li><strong>Privacy.</strong> Protect against coercion with non-correlation, privacy, and pseudonymity.</li>
+        <li><strong>Resilience.</strong> Decrease the likelihood of users losing their funds via any means.</li>
+        <li><strong>Openness.</strong> Support open infrastructure to allow developers to create their own applications.</li>
+      </ul>
+    </div>
+
+    <p>Everything here is free and open source. The demos are working examples for developers, not products: try them, read the code, and build your own.</p>
+
+    <h2 id="passkey-demo"><img src="/assets/badges/cloudflare-passkey.png" alt="">Passkey Demo</h2>
+
+    <div class="service with-shot">
+      <a class="shot" href="https://passkeydemo.gordianstack.com/"><img src="/assets/screenshots/passkey.png" alt="The passkey demo's sign-in page"></a>
+      <div>
+        <p><strong>Web Demo.</strong> Create a passkey at gordianstack.com and log in with it, with no password, no email address, and no identity provider between you and your account. The demo runs on <code>passkey-cloudflare</code>, our passkey-only identity library for web apps, built on Cloudflare Workers and Durable Objects. Your recovery codes are Gordian seeds, shown as URs and Bytewords, so you can keep them in Gordian Seed Tool.</p>
+        <ul class="links">
+          <li><a href="https://passkeydemo.gordianstack.com/"><strong>Try the Passkey Demo</strong></a></li>
+          <li><a href="https://developer.blockchaincommons.com/cloudflare-passkey/"><strong>About <code>passkey-cloudflare</code></strong></a></li>
+          <li><a href="https://github.com/BlockchainCommons/passkey-cloudflare"><strong><code>passkey-cloudflare</code> on GitHub</strong></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="forge-demo"><img src="/assets/badges/open-integrity-forge.png" alt="">Open Integrity Forge Demo</h2>
+
+    <div class="service with-shot">
+      <a class="shot" href="https://forgedemo.gordianstack.com/"><img src="/assets/screenshots/forge.png" alt="The Open Integrity Forge demo"></a>
+      <div>
+        <p><strong>Web Demo.</strong> A proof-of-concept Git platform that keeps a human in charge of what AI agents commit. Each agent works in its own fork with a one-hour signing key, and only the person holding the passkey can merge its changes into <code>main</code>. After you create a passkey and log in, you can make a first commit, admit two agents, watch them work, promote one change, and bounce another when an agent goes rogue.</p>
+        <p class="status"><strong>Status:</strong> Open Integrity Forge is a concept, on hold while it waits for feedback. The demo stays up and gets security fixes, and projects there may be deleted without notice.</p>
+        <ul class="links">
+          <li><a href="https://forgedemo.gordianstack.com/"><strong>Try the Forge Demo</strong></a></li>
+          <li><a href="https://developer.blockchaincommons.com/open-integrity/forge/"><strong>About Open Integrity Forge</strong></a></li>
+          <li><a href="https://developer.blockchaincommons.com/open-integrity/"><strong>About Open Integrity</strong></a></li>
+          <li><a href="https://github.com/OpenIntegrityProject/open-integrity-forge/issues/new"><strong>Give Feedback</strong></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="lifehash"><img src="/assets/badges/lifehash.png" alt="">lifehash.info</h2>
+
+    <div class="service">
+      <div>
+        <p><strong>Web Tool.</strong> Type any text, or paste a SHA-256 digest, and see its LifeHash: an icon drawn by running Conway's Game of Life from a hash of the input. The same input always gives the same icon, and different inputs give icons that look different, so a person can recognize a seed, key, or address at a glance. The page runs our C++ LifeHash library in your browser, compiled to WebAssembly, and sends nothing to the cloud. LifeHash is a visual aid, not a cryptographic hash.</p>
+        <ul class="links">
+          <li><a href="https://lifehash.info/"><strong>Try lifehash.info</strong></a></li>
+          <li><a href="https://developer.blockchaincommons.com/lifehash/"><strong>About LifeHash</strong></a></li>
+          <li><a href="https://github.com/BlockchainCommons/lifehash.info"><strong>lifehash.info on GitHub</strong></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="seedtool"><img src="/assets/badges/seed-tool-cli.png" alt="">seedtool.info</h2>
+
+    <div class="service">
+      <div>
+        <p><strong>Web Tool.</strong> Our <code>seedtool</code> command line, running in your browser. It starts with fresh random entropy, or takes your own, along with any seedtool arguments, and shows the seed as hex, as Bytewords, as a BIP-39 mnemonic, as SSKR shares, and as a QR code. It is for learning and testing: real seeds belong on an offline device, such as one running Gordian Seed Tool.</p>
+        <ul class="links">
+          <li><a href="https://seedtool.info/"><strong>Try seedtool.info</strong></a></li>
+          <li><a href="https://github.com/BlockchainCommons/seedtool.info"><strong>seedtool.info on GitHub</strong></a></li>
+          <li><a href="https://github.com/BlockchainCommons/seedtool-cli-rust"><strong>Seedtool CLI on GitHub</strong></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>More from Blockchain Commons</h2>
+
+    <ul class="links">
+      <li><a href="https://developer.blockchaincommons.com/technology/"><strong>Our Technologies</strong></a>, the full Gordian Stack: data formats, data resilience, digital identity, signatures, and secure communication.</li>
+      <li><a href="https://developer.blockchaincommons.com/principles/"><strong>Gordian Principles</strong></a></li>
+      <li><a href="https://developer.blockchaincommons.com/apps/"><strong>Reference Apps</strong></a>, including Gordian Seed Tool for iOS.</li>
+      <li><a href="https://github.com/blockchaincommons"><strong>Blockchain Commons on GitHub</strong></a></li>
+      <li><a href="https://www.blockchaincommons.com/sponsors/"><strong>Support Blockchain Commons</strong></a></li>
+    </ul>
+
+    <hr>
+
+    <p class="credit">Header image by <a href="https://pixabay.com/users/elasticcomputefarm-1865639/">ElasticComputeFarm</a> from <a href="https://pixabay.com/">Pixabay</a>.</p>
+
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="wrap">
+    <ul>
+      <li><a href="https://github.com/blockchaincommons">GitHub</a></li>
+      <li><a href="https://github.com/BlockchainCommons/Gordian-Developer-Community/discussions">Developer Discussions</a></li>
+      <li><a href="https://twitter.com/BlockchainComns">Twitter</a></li>
+    </ul>
+    <p>&copy; 2026 <a href="https://www.blockchaincommons.com">Blockchain Commons</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
