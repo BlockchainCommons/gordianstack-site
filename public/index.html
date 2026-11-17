@@ -34,42 +34,42 @@
 <section class="hero">
   <div class="wrap">
     <h1>The Gordian Stack</h1>
-    <p class="tagline">Open Tools You Can Try Today</p>
+    <p class="tagline">Technology Demos</p>
   </div>
 </section>
 
 <main>
   <div class="wrap">
 
-    <p class="lead">The Gordian Stack is Blockchain Commons' set of open, interoperable technologies for holding keys, sharing data, and proving identity in ways that keep people in control of their own digital lives. This page links to live demos and web tools where you can try parts of it for yourself.</p>
+    <p class="lead">The Gordian Stack is Blockchain Commons' set of open, interoperable technologies for communicating in secure & interoperable ways, ensuring data resilience, and making digital identity self-sovereign, so that people can control their own digital lives. This page links to live demos and web tools where you can try parts of it for yourself.</p>
 
     <h2>Why the Gordian Stack?</h2>
 
-    <p>Too much of the internet asks you to trust a platform that sees everything: to log in through one of a few large companies, to reveal more than a task requires, and to leave your data behind when you go. The Gordian Stack takes a different approach. It is not an app. It is a layer underneath apps that decides how keys are held, how data is shared, and how devices talk to each other, so that privacy becomes a property of the data itself.</p>
-
-    <p>Our designs focus on four specific principles:</p>
+    <p>Too much of the internet asks you to trust a platform that sees everything: you log in through one of a few large companies, reveal more than the task requires, and then leave your data behind when you go. The Gordian Stack takes a different approach. It is not an app, but a layer underneath apps that decides how keys are held, how data is stored, and how devices talk to each other. It does so with a focus on the four Gordian Principles:</p>
 
     <div class="notice">
       <ul>
         <li><strong>Independence.</strong> Improve user freedom from involuntary oversight and external control.</li>
         <li><strong>Privacy.</strong> Protect against coercion with non-correlation, privacy, and pseudonymity.</li>
-        <li><strong>Resilience.</strong> Decrease the likelihood of users losing their funds via any means.</li>
+        <li><strong>Resilience.</strong> Decrease the likelihood of users losing funds or identities via any means.</li>
         <li><strong>Openness.</strong> Support open infrastructure to allow developers to create their own applications.</li>
       </ul>
     </div>
 
-    <p>Everything here is free and open source. The demos are working examples for developers, not products: try them, read the code, and build your own.</p>
+    <p>Below are demos that are working examples for developers (not products) that demonstrate some elements of the Gordian Stack. Try them, read the code, and build your own. Everything here is free and open source. <i>See the <a href="https://developer.blockchaincommons.com/touchpoints/stack/">touchpoints</a> page at our <a href="https://developer.blockchaincommons.com/">developer website</a> for a more extensive look at the Gordian Stack.</i></p>
 
     <h2 id="passkey-demo"><img src="/assets/badges/cloudflare-passkey.png" alt="">Passkey Demo</h2>
 
     <div class="service with-shot">
       <a class="shot" href="https://passkeydemo.gordianstack.com/"><img src="/assets/screenshots/passkey.png" alt="The passkey demo's sign-in page"></a>
       <div>
-        <p><strong>Web Demo.</strong> Create a passkey at gordianstack.com and log in with it, with no password, no email address, and no identity provider between you and your account. The demo runs on <code>passkey-cloudflare</code>, our passkey-only identity library for web apps, built on Cloudflare Workers and Durable Objects. Your recovery codes are Gordian seeds, shown as URs and Bytewords, so you can keep them in Gordian Seed Tool.</p>
+        <p><strong>Web Demo.</strong> Create a passkey at gordianstack.com and log in with it, with no password, email address, or identity provider between you and your account. The demo runs on <code>passkey-cloudflare</code>, our passkey-only identity library for web apps, built on Cloudflare Workers and Durable Objects. Your recovery codes are cryptographic seeds, shown as URs, Bytewords, or BIP-39 words that you can store in Gordian Seed Tool.</p>
         <ul class="links">
           <li><a href="https://passkeydemo.gordianstack.com/"><strong>Try the Passkey Demo</strong></a></li>
           <li><a href="https://developer.blockchaincommons.com/cloudflare-passkey/"><strong>About <code>passkey-cloudflare</code></strong></a></li>
           <li><a href="https://github.com/BlockchainCommons/passkey-cloudflare"><strong><code>passkey-cloudflare</code> on GitHub</strong></a></li>
+          <li><a href="https://github.com/BlockchainCommons/passkey-cloudflare/issues/new"><strong>Give Feedback</strong></a></li>
+          <li><a href="https://apps.apple.com/us/app/gordian-seed-tool/id1545088229"><strong>Store with Gordian Seed Tool (iOS)</strong></a></li>
         </ul>
       </div>
     </div>
@@ -79,12 +79,12 @@
     <div class="service with-shot">
       <a class="shot" href="https://forgedemo.gordianstack.com/"><img src="/assets/screenshots/forge.png" alt="The Open Integrity Forge demo"></a>
       <div>
-        <p><strong>Web Demo.</strong> A proof-of-concept Git platform that keeps a human in charge of what AI agents commit. Each agent works in its own fork with a one-hour signing key, and only the person holding the passkey can merge its changes into <code>main</code>. After you create a passkey and log in, you can make a first commit, admit two agents, watch them work, promote one change, and bounce another when an agent goes rogue.</p>
-        <p class="status"><strong>Status:</strong> Open Integrity Forge is a concept, on hold while it waits for feedback. The demo stays up and gets security fixes, and projects there may be deleted without notice.</p>
+        <p><strong>Web Demo.</strong> A proof-of-concept Git platform that keeps a human in charge of what AI agents commit. Each agent works in its own fork with a one-hour signing key, and only the person holding the passkey can merge its changes into <code>main</code>. In you demo, you create a passkey and log in, make a first commit, admit two agents, watch them work, promote one change, and bounce another when an agent goes rogue.</p>
         <ul class="links">
           <li><a href="https://forgedemo.gordianstack.com/"><strong>Try the Forge Demo</strong></a></li>
           <li><a href="https://developer.blockchaincommons.com/open-integrity/forge/"><strong>About Open Integrity Forge</strong></a></li>
           <li><a href="https://developer.blockchaincommons.com/open-integrity/"><strong>About Open Integrity</strong></a></li>
+          <li><a href="https://github.com/OpenIntegrityProject/open-integrity-forge/"><strong>Open Integrity Forge on GitHub</strong></a></li>
           <li><a href="https://github.com/OpenIntegrityProject/open-integrity-forge/issues/new"><strong>Give Feedback</strong></a></li>
         </ul>
       </div>
